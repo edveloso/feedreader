@@ -13,8 +13,7 @@ export class HomePage {
   public feeds: Array<string>;
   private url: string = "https://www.reddit.com/new.json";
   private olderPosts: string = "https://www.reddit.com/new.json?after=";
-  private afterParam: string = "";
-  private beforeParam: string = "";
+  private afterParam: string = "";  
   private newerPosts: string = "https://www.reddit.com/new.json?before=";
 
   constructor(public navCtrl: NavController, public http: Http, public loadingCtrl: LoadingController) {
@@ -44,7 +43,7 @@ export class HomePage {
                   item['data']['thumbnail'] = 'http://www.redditstatic.com/icon.png';
               }                     
             });
-            
+
   				});
 
 
